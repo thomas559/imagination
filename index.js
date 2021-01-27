@@ -474,7 +474,7 @@ client.on('group-participants-update', async (anu) => {
 				payout = body.slice(10)
 				const koinPerlimit = 1000
 				const total = koinPerlimit * payout
-				if ( checkATMuser(sender) <= total) return reply(`maaf uang kamu belum mencukupi. silahkan kumpulkan dan beli nanti`)
+				if ( checkATMuser(sender) <= total) return reply(`maaf uang anda tidak mencukupi. silahkan kumpulkan dan beli nanti`)
 				if ( checkATMuser(sender) >= total ) {
 					confirmATM(sender, total)
 					bayarLimit(sender, payout)
@@ -514,7 +514,7 @@ client.on('group-participants-update', async (anu) => {
 					aruga = body.slice(8)
 					reply(ind.wait())
 					aruga = await getBuffer(`https://arugaz.my.id/api/textpro/sandsummer?text=${aruga}`)
-					client.sendMessage(from, aruga, image, {caption: 'Nih kak', quoted: mek})
+					client.sendMessage(from, aruga, image, {caption: 'Done', quoted: mek})
 					await limitAdd(sender)
 					break
 					case 'sandwrite':
@@ -524,7 +524,7 @@ client.on('group-participants-update', async (anu) => {
 					aruga = body.slice(11)
 					reply(ind.wait())
 					aruga = await getBuffer(`https://arugaz.my.id/api/textpro/sandwrite?text=${aruga}`)
-					client.sendMessage(from, aruga, image, {caption: 'Nih kak', quoted: mek})
+					client.sendMessage(from, aruga, image, {caption: 'Done', quoted: mek})
 					await limitAdd(sender)
 					break 
 					case 'metaldark':
@@ -534,7 +534,7 @@ client.on('group-participants-update', async (anu) => {
 					aruga = body.slice(11)
 					reply(ind.wait())
 					aruga = await getBuffer(`https://arugaz.my.id/api/textpro/metaldark?text=${aruga}`)
-					client.sendMessage(from, aruga, image, {caption: 'Nih kak', quoted: mek})
+					client.sendMessage(from, aruga, image, {caption: 'Done', quoted: mek})
 					await limitAdd(sender)
 					break 
 					case 'dropwater':
@@ -544,7 +544,7 @@ client.on('group-participants-update', async (anu) => {
 					aruga = body.slice(11)
 					reply(ind.wait())
 					aruga = await getBuffer(`https://arugaz.my.id/api/textpro/dropwater?text=${aruga}`)
-					client.sendMessage(from, aruga, image, {caption: 'Nih kak', quoted: mek})
+					client.sendMessage(from, aruga, image, {caption: 'Done', quoted: mek})
 					await limitAdd(sender)
 					break 
 					case 'grenneon':
@@ -554,7 +554,7 @@ client.on('group-participants-update', async (anu) => {
 					aruga = body.slice(10)
 					reply(ind.wait())
 					aruga = await getBuffer(`https://arugaz.my.id/api/textpro/greenneon?text=${aruga}`)
-					client.sendMessage(from, aruga, image, {caption: 'Nih kak', quoted: mek})
+					client.sendMessage(from, aruga, image, {caption: 'Done', quoted: mek})
 					await limitAdd(sender)
 					break 
 					case 'neontext':
@@ -564,7 +564,7 @@ client.on('group-participants-update', async (anu) => {
 					aruga = body.slice(10)
 					reply(ind.wait())
 					aruga = await getBuffer(`https://arugaz.my.id/api/textpro/neontext?text=${aruga}`)
-					client.sendMessage(from, aruga, image, {caption: 'Nih kak', quoted: mek})
+					client.sendMessage(from, aruga, image, {caption: 'Done', quoted: mek})
 					await limitAdd(sender)
 					break 
 					case 'toxic':
@@ -574,7 +574,7 @@ client.on('group-participants-update', async (anu) => {
 					aruga = body.slice(7)
 					reply(ind.wait())
 					aruga = await getBuffer(`https://arugaz.my.id/api/textpro/toxictext?text=${aruga}`)
-					client.sendMessage(from, aruga, image, {caption: 'Nih kak', quoted: mek})
+					client.sendMessage(from, aruga, image, {caption: 'Done', quoted: mek})
 					await limitAdd(sender)
 					break
 					case 'sumery':
@@ -584,7 +584,7 @@ client.on('group-participants-update', async (anu) => {
 					aruga = body.slice(8)
 					reply(ind.wait())
 					aruga = await getBuffer(`https://arugaz.my.id/api/textpro/sandsummery?text=${aruga}`)
-					client.sendMessage(from, aruga, image, {caption: 'Nih kak', quoted: mek})
+					client.sendMessage(from, aruga, image, {caption: 'Done', quoted: mek})
 					await limitAdd(sender)
 					break
 					case 'blood':
@@ -594,7 +594,7 @@ client.on('group-participants-update', async (anu) => {
 					aruga = body.slice(7)
 					reply(ind.wait())
 					aruga = await getBuffer(`https://arugaz.my.id/api/textpro/bloodtext?text=${aruga}`)
-					client.sendMessage(from, aruga, image, {caption: 'Nih kak', quoted: mek})
+					client.sendMessage(from, aruga, image, {caption: 'Done', quoted: mek})
 					await limitAdd(sender)
 					break
 					case 'firework':
@@ -604,7 +604,7 @@ client.on('group-participants-update', async (anu) => {
 					arugazzz = body.slice(10)
 					reply(ind.wait())
 					arugazzz = await getBuffer(`https://arugaz.my.id/api/textpro/firework?text=${arugazzz}`)
-					client.sendMessage(from, arugazzz, image, {caption: 'Nih kak', quoted: mek})
+					client.sendMessage(from, arugazzz, image, {caption: 'Done', quoted: mek})
 					await limitAdd(sender)
 					break
 					case 'lava':
@@ -614,7 +614,7 @@ client.on('group-participants-update', async (anu) => {
 					aruga = body.slice(6)
 					reply(ind.wait())
 					aruga = await getBuffer(`https://arugaz.my.id/api/textpro/lavatext?text=${aruga}`)
-					client.sendMessage(from, aruga, image, {caption: 'Nih kak', quoted: mek})
+					client.sendMessage(from, aruga, image, {caption: 'Done', quoted: mek})
 					await limitAdd(sender)
 					break
                 case '1cak':
@@ -987,7 +987,7 @@ client.on('group-participants-update', async (anu) => {
 					client.sendMessage(from, pok, image, { quoted: mek })
 					await limitAdd(sender)
 					break
-                case 'anjing':
+                case 'repair':
                 if (!isRegistered) return reply(ind.noregis())
                 if (isLimit(sender)) return reply(ind.limitend(pusname))
                    if (!isGroup) return reply(ind.groupo())
@@ -1381,7 +1381,7 @@ client.on('group-participants-update', async (anu) => {
 						fs.unlinkSync(media)
 						if (err) return reply(ind.stikga())
 						buffer = fs.readFileSync(ran)
-						client.sendMessage(from, buffer, image, {quoted: mek, caption: '𝗱𝗮?? 𝗷𝗮𝗱𝗶 '})
+						client.sendMessage(from, buffer, image, {quoted: mek, caption: 'Done ra'})
 						fs.unlinkSync(ran)
 					})
 					await limitAdd(sender)
